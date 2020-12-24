@@ -5,7 +5,7 @@ const path = require("path");
 
 //Settings express
 
-app.set("port", 3000);
+app.set("port", process.env.PORT || 3000);
 
 //Definiendo la ruta de views (solo la carpeta)
 app.set("views", path.join(__dirname, "views"));
